@@ -1,0 +1,83 @@
+.workout-plan-card {
+    border: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .workout-plan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .workout-plan-card.selected {
+    border: 2px solid #0d6efd;
+    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.15);
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  .card-title:hover {
+    color: #0d6efd;
+  }
+  
+  .card-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .btn-sm {
+    padding: 0.4rem 1rem;
+    font-size: 0.875rem;
+    border-radius: 20px;
+    transition: all 0.2s;
+  }
+  
+  .btn-outline-danger {
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+  }
+  
+  .btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .selected-plan-details {
+    animation: fadeIn 0.3s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .col-md-6 {
+      margin-bottom: 1rem;
+    }
+    
+    .card-title {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* Empty state styling */
+  .text-muted {
+    color: #6c757d !important;
+  }
+  
+  .bi {
+    vertical-align: -0.125em;
+  }
